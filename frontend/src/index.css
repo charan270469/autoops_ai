@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0f1117;
+  color: #e4e6ed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes agent-feed-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.agent-feed-enter {
+  animation: agent-feed-enter 0.35s ease-out both;
+}
+
+@keyframes meeting-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.meeting-results-enter {
+  animation: meeting-fade-in 0.45s ease-out both;
+}

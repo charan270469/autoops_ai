@@ -1,0 +1,3 @@
+.ssh/
+dist/
+node_modules/
